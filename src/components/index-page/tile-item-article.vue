@@ -3,7 +3,7 @@
     .tile-article_label {{ itemData.type }}
 
     router-link.tile-article_link(to="/some-link")
-      img.tile-article_img(:src="itemData.thumbnail || 'https://www.freeiconspng.com/uploads/no-image-icon-11.PNG'")
+      img.tile-article_img(:src="itemData.thumbnail || 'https://cdn3.housetipster.com/empty.jpg'")
 
     .tile-article_body
       .tile-article_info

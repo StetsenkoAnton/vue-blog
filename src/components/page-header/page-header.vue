@@ -15,19 +15,19 @@
         .header_row.header_row--nav
           ul.header_nav-list
             li
-              g-link.nav-list_link(:to="{name: 'VrList'}" exact) VIRTUAL ROOMS
+              g-link.nav-list_link(to="/blog" exact) BLOG
             li
-              g-link.nav-list_link(:to="{name: 'GalleryList'}" exact ) GALLERY
+              g-link.nav-list_link(to="/gallery" exact) GALLERY
+            //li
+              g-link.nav-list_link(to="/StoreFront" exact) STORE FRONT
+            //li
+              g-link.nav-list_link(to="/MarketPlace" exact) MARKETPLACE
+            //li
+              g-link.nav-list_link(to="/ProductPage" exact) PRODUCTS
             li
-              g-link.nav-list_link(:to="{name: 'StoreFront'}" exact) STORE FRONT
-            li
-              g-link.nav-list_link(:to="{name: 'MarketPlace'}" exact) MARKETPLACE
-            li
-              g-link.nav-list_link(:to="{name: 'ProductPage'}" exact) PRODUCTS
-            li
-              g-link.nav-list_link(to="/some-link" exact) CONTACT
+              g-link.nav-list_link(to="/login" exact) CONTACT
             //-li
-              g-link.nav-list_link(:to="{name: 'CartPage'}" exact)
+              g-link.nav-list_link(:to="/CartPage" exact)
                 span Shopping Cart
                 | &nbsp;
                 i.fa.fa-shopping-cart.show-for-presmall
@@ -36,7 +36,7 @@
 
           ul.header_options.header_nav-secondary
             li
-              g-link.nav-list_link(:to="{name: 'ArticleList'}")
+              g-link.nav-list_link(to="/media")
                 span MEDIA
             li
               g-link.nav-list_link(to="/some-link")

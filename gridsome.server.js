@@ -27,6 +27,7 @@ module.exports = function (api) {
         title: post.alt_description,
         type: 'reddit',
         thumbnail: post.urls.regular,
+        author: post.user.name
       })
     }
 

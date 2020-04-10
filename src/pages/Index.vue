@@ -20,21 +20,11 @@
           section.main-roles_section(v-if="!userIsLogin")
             include ./index-blocks/roles.pug
 
-          //-section.main-tile_section-list
-            h2 Blog
-            ul
-              li(v-for="post in $page.blogPosts.edges" :key="post.id")
-                g-link(:to="post.node.path") {{ post.node.title }}
-          //-section.main-tile_section-list
-            h2 Reddit
-            ul
-              li( v-for="post in $page.redditPosts.edges" :key="post.id")
-                g-link(:to="post.node.path") {{ post.node.title }}
 
 </template>
 
 <script>
-  import mainContent from '../../content/single-data/main.json'
+  import mainContent from '../../content/single-data/main.json';
   import TileList from '@/components/index-page/tile-list.vue';
 export default {
   // metaInfo: {

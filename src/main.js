@@ -3,13 +3,11 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import BlogLayout   from '~/layouts/Blog.vue'
-import LogOut       from '~/layouts/LogOut.vue'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
   Vue.component('BlogLayout', BlogLayout);
-  Vue.component('LogOut', LogOut);
 
   Vue.directive('btn-spinner', {
     bind: (el)=> {

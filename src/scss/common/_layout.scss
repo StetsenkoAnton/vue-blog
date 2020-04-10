@@ -39,6 +39,7 @@ body {
 .content-wrap {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   @include media('>=medium') {
     max-width: 1170px;
   }
@@ -46,9 +47,6 @@ body {
     @include media('>=medium') {
       max-width: 1230px;
     }
-  }
-  &:empty {
-    display: none;
   }
 }
 
@@ -80,6 +78,7 @@ body {
 }
 
 .page_content-wrap {
+  flex: 1 1 auto;
   @include media('>=xlarge') {
     display: flex;
     align-items: flex-start;

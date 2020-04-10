@@ -20,7 +20,7 @@ section.header_signin(v-if="!userIsLogin")
               br
               | Create your account right now and start using House!
 
-            g-link.btn.btn--outline(:to="{name: 'RegUser'}") Create an Account
+            g-link.btn.btn--outline(to="/login") Create an Account
 
         include user-login
 

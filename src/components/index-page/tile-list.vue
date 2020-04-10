@@ -69,11 +69,6 @@
 export default {
   name: 'TileList',
   components: {TileItemArticle, TileItemImage},
-  // data() {
-  //   return {
-  //     //content: mainContent,
-  //   }
-  // },
   computed: {
     tileList() {
       const blogList = this.$static.blogPosts.edges;

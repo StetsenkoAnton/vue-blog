@@ -1,0 +1,224 @@
+<template lang="pug">
+  .article-item_container
+    .article-item_picture-holder
+      .article-item_picture-box
+        img.media-item_picture(
+          :src="cartData.thumbnail || 'https://cdn3.housetipster.com/empty.jpg'"
+        )
+      g-link.article-item_hover-link(:to="cartData.path")
+
+    .article-item_details
+      .article-item_details-body
+        h3.article-item_title.articleTitle
+          g-link(:to='cartData.path') {{ cartData.title }}
+        .article-item_views-details
+          ul.article-item_counters-list
+            li.counter-item
+              i(aria-hidden="true").fa.fa-thumbs-up
+              | &nbsp;
+              | {{ cartData.likesCount || getRandomInt(1000)}}
+            li.counter-item
+              i(aria-hidden="true").fa.fa-eye
+              | &nbsp;
+              | {{ cartData.viewsCount || getRandomInt(1000)}}
+            li.counter-item
+              i(aria-hidden="true").fa.fa-comment
+              | &nbsp;
+              | {{ cartData.commentsCount || getRandomInt(100)}}
+
+          .article-item_rating.rating-component
+            .stars-holder
+              i(aria-hidden="true"
+                v-for="rating in [1,2,3,4,5]"
+                :class="{'empty': rating > ratingRandom}"
+              ).fa.fa-star-o
+              | {{ratingRandom}}
+
+        .article-item_content(v-if="cartData.tagLine")
+          p {{ cartData.tagLine }}
+
+      footer.article-item_details-footer
+        ul.vr-card_components-list
+          li
+            .vr_component-item
+              i(aria-hidden="true").fa.fa-shopping-basket
+              | &nbsp;
+              | {{ cartData.componentsCount || getRandomInt(100)}}
+              | &nbsp;
+              span.item-name components
+          li
+            .vr_component-item
+              i(aria-hidden="true").fa.fa-user
+              | &nbsp;
+              | {{ cartData.vendorsCount  || getRandomInt(10)}}
+              | &nbsp;
+              span.item-name vendors
+        .show-for-album.features-list_holder
+          ul.vr-card_features-list
+            li(:class="{'disabled': !getRandomInt()}")
+              i(aria-hidden="true").ht.chick
+            li(:class="{'disabled': !getRandomInt()}")
+              i(aria-hidden="true").ht.vr-rotate
+            li(:class="{'disabled': !getRandomInt()}")
+              i(aria-hidden="true").ht.vr-play
+            li(:class="{'disabled': !getRandomInt()}")
+              i(aria-hidden="true").ht.vr-face
+            li(:class="{'disabled': !getRandomInt()}")
+              i(aria-hidden="true").ht.vr-label
+
+</template>
+
+<script>
+  export default {
+    name: 'ArticleCart',
+    props: {
+      cartData: {
+        type: Object
+      }
+    },
+    data() {
+      return {
+        ratingRandom: this.getRandomInt(5)
+      }
+    },
+    methods: {
+      getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      }
+    }
+  }
+
+</script>
+
+<style lang="scss">
+  @import '../scss/base';
+  /*@import '../scss/components/slider-entity';*/
+  @import '../scss/pages/articles-list';
+  /*@import '../scss/pages/filters-sidebar';*/
+  /*@import '../scss/components/site-entity-banner';*/
+  /*@import '../scss/components/pager';*/
+  /*@import '../scss/components/simple-pagination';*/
+  /*@import '../scss/components/no-result';*/
+  /*@import '../scss/repeating-blocks/sorting&pagination';*/
+  /*@import '../scss/repeating-blocks/filters';*/
+  /*@import '../scss/components/affiliations';*/
+  @import '../scss/components/rating';
+
+  .article-item_title {
+    margin-bottom: 4px;
+    height: calc(2em * #{$line-height-detail});
+    overflow: hidden;
+  }
+  .article-item_content {
+    margin-bottom: 1em;
+    overflow: hidden;
+    font-weight: 300;
+    p {
+      display: none;
+      @include media('>=medium') {
+        max-height: calc(3em * #{$line-height-detail});
+        display: block;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .article-item_details-footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .article-item_views-details {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .show-for-album {
+    display: none;
+    .articles-list--album-view & {
+      @include media('>=large') {
+        display: block;
+      }
+    }
+  }
+
+  .vr-card_components-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    li {
+      color: $col-txt;
+      font-size: .875rem;
+      margin-right: 16px;
+      &:last-child { margin-right: 0; }
+    }
+    .vr_component-item {
+      font-weight: 600;
+      .item-name { font-weight: 400; }
+    }
+  }
+  .features-list_holder {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .vr-card_features-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    li {
+      color: $col-primary;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      line-height: 1;
+      &.disabled {
+        color: $disable-txt;
+      }
+    }
+  }
+
+  .commercial-banner.vr-360 {
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    width: 0;
+    height: 0;
+    border: 63px inset;
+    border-color: $col-primary transparent transparent;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    color: $white;
+    z-index: 1;
+    &:before {
+      content: '\e918';
+      font-family: TipsterIconset;
+      font-size: 1.5rem;
+      line-height: 1;
+      position: absolute;
+      transform: rotate(45deg);
+      right: 4px;
+      bottom: 31px;
+    }
+    &.vr-360--medium {
+      border-top-width: 50px;
+      border-left-width: 50px;
+      &:before {
+        font-size: 1.25rem;
+        bottom: 25px;
+      }
+    }
+  }
+</style>
