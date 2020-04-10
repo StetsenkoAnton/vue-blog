@@ -8,13 +8,13 @@
     //-load-spinner
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
+<!--<static-query>-->
+<!--query {-->
+<!--  metadata {-->
+<!--    siteName-->
+<!--  }-->
+<!--}-->
+<!--</static-query>-->
 
 <script>
   import PageHeader from '@/components/page-header/page-header.vue';
