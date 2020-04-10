@@ -3,7 +3,7 @@
     .tile-article_label {{ itemData.type }}
 
     router-link.tile-article_link(to="/some-link")
-      img.tile-article_img(:src="itemData.thumbnail")
+      img.tile-article_img(:src="itemData.thumbnail || 'https://www.freeiconspng.com/uploads/no-image-icon-11.PNG'")
 
     .tile-article_body
       .tile-article_info
