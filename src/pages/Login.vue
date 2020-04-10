@@ -83,7 +83,7 @@ export default {
         && this.userPass === 'easy'
         && this.isRemember
       ) {
-        localStorage.setItem('isUserLogin', 'true');
+        //localStorage.setItem('isUserLogin', 'true');
         this.$router.push('/')
       }
     }

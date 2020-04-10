@@ -42,10 +42,10 @@ export default function (Vue, { router, head, isClient }) {
   });
 
   /*ROUTER*/
-  router.beforeEach((to, from, next) => {
-    if(localStorage.getItem('isUserLogin') || to.name === 'login') {
-      next()
-    }
-    else next('/login')
-  })
+  // router.beforeEach((to, from, next) => {
+  //   if(localStorage.getItem('isUserLogin') || to.name === 'login') {
+  //     next()
+  //   }
+  //   else next('/login')
+  // })
 }
