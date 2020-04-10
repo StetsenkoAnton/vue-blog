@@ -1,0 +1,91 @@
+
+
+// adaptive images
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  //- blur in preload
+  &.preload {
+    filter: blur(5px);
+    &.landscape {
+      min-width: 100%;
+      height: auto;
+    }
+    &.portrait {
+      width: auto;
+      min-height: 100%;
+    }
+  }
+}
+
+// google map fix
+.gm-style img {max-width: none}
+
+//
+::selection {
+  background-color: $col-primary;
+  color: $white;
+}
+
+iframe, video {
+  width: 100%;
+}
+
+.recaptcha-block {
+  margin: 0 auto;
+  > div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+  }
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  display: block;
+}
+
+.spinner > div {
+  background-color: $white;
+  height: 100%;
+  width: 5px;
+  display: inline-block;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  + div {
+    margin-left: 3px;
+  }
+}
+
+.spinner .rect2 {
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  animation-delay: -0.8s;
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { transform: scaleY(.25); }
+  20% { transform: scaleY(.85); }
+}

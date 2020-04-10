@@ -1,0 +1,21 @@
+agile.banners_slides-wrapper.slider--main(
+  v-if="content.slider.length"
+  :arrows="false"
+  :autoplaySpeed="5000"
+  :speed="2000"
+  :fade="true"
+  :autoplay="true"
+  :pauseOnHover="false"
+)
+  .banners_slide-block(
+    v-for="slideItem in content.slider"
+    :key="slideItem.slideImage"
+  )
+    img.banners_slide-img(:src="slideItem.slideImage" alt="slider picture")
+    .slide_text-block(
+      v-if="slideItem.slideTitle || slideItem.slideText"
+    )
+      .banners_slide-title
+        h1.h1 {{ slideItem.slideTitle }}
+      .banners_slide-text
+        p {{ slideItem.slideText }}

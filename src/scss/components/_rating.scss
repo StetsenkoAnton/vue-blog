@@ -1,0 +1,19 @@
+.rating-component {
+  margin-top: auto;
+  font-size: .875rem;
+
+  i {
+    position: relative;
+    margin: 0 2px;
+    color: $col-primary;
+    &:before {
+      content: '\f005';
+    }
+
+    &.empty {
+      &:before {
+        content: '\f006';
+      }
+    }
+  }
+}

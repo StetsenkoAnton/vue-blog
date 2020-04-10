@@ -2,18 +2,16 @@
   <BlogLayout>
     <div class="markdown-body">
       <h1>{{ $page.post.title }}</h1>
-      <img :src="$page.post.featuredImage" alt="blog">
-      <div v-html="$page.post.content" />
+      <img :src="$page.post.thumbnail" alt="blog">
+      <div v-html="$page.post.body" />
     </div>
   </BlogLayout>
 </template>
 
 <page-query>
-query Post ($path: String!) {
+query Blog ($path: String!) {
   post: post (path: $path) {
     title
-    content
-    featuredImage
   }
 }
 </page-query>

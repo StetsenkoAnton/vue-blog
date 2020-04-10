@@ -4,28 +4,55 @@
 
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-
+const unsplashKey = '45bc854368247bdd469bef2128de9457d67d8501e5f1923667efbd308edb88bd';
 const axios = require('axios')
 
 module.exports = function (api) {
   api.loadSource(async store => {
-    const { data } = await axios.get('https://www.reddit.com/r/aww.json?raw_json=1')
+    let options = {
+      params: {
+        client_id: unsplashKey,
+        page: 1,
+        per_page: 15
+      }
+    };
+    const { data } = await axios.get('https://api.unsplash.com/photos', options)
 
-    const contentType = store.addContentType({
+    const contentType = store.addCollection({
       typeName: 'RedditPost',
-      route: '/reddit/:id' // optional
     })
-
-    for (const post of data.data.children) {
+    for (const post of data) {
       contentType.addNode({
-        id: post.data.id,
-        title: post.data.title,
-        path: '/reddit/' + post.data.id,
-        fields: {
-          thumbnail: post.data.thumbnail,
-          img: post.data.preview.images[0].source.url
-        }
+        id: post.id,
+        title: post.alt_description,
+        type: 'reddit',
+        thumbnail: post.urls.regular,
       })
     }
+
+    store.addSchemaTypes(`
+      type Media implements Node {
+        title: String
+        type: String
+        date: String
+        body: String
+        thumbnail: String
+        leadPar: String
+        path: String
+      }
+      type Blog implements Node {
+        title: String
+        type: String
+        date: String
+        body: String
+        thumbnail: String
+      }`)
+  });
+  api.chainWebpack(config => {
+    config.module
+      .rule('pug')
+      .test(/\.pug$/)
+      .use('pug-plain-loader')
+      .loader('pug-plain-loader')
   })
-}
+};

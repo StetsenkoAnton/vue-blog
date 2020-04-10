@@ -6,13 +6,55 @@ media_folder: "static/uploads"
 public_folder: "uploads"
 
 collections:
-- name: "blog" # Used in routes, e.g., /admin/collections/blog
-  label: "Blog" # Used in the UI
-  folder: "blog" # The path to the folder where the documents are stored
-  create: true # Allow users to create new documents in this collection
-  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  fields: # The fields for each document, usually in front matter
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Featured Image", name: "featuredImage", widget: "image"}
-    - {label: "Body", name: "body", widget: "markdown"}
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'json'
+    sort: "date:desc" # Default is title:asc
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title",          name: "title",      widget: "string"}
+      - {label: "Publish Date",   name: "date",       widget: "datetime", format: "dddd MMMM Do, YYYY"}
+      - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
+      - {label: "Category",       name: "category",   widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
+      - {label: "Body",           name: "body",       widget: "markdown"}
 
+  - name: "single-data"
+    label: "Single data"
+    files:
+      - label: "Footer Info"
+        name: "footer"
+        format: 'json'
+        file: "content/single-data/footer.json"
+        fields:
+          - label: 'Contacts'
+            name: 'contacts'
+            fields:
+              - {label: Email title,  name: emailTitle,   widget: string}
+              - {label: Email,        name: email,        widget: string}
+              - {label: Phone title,  name: phoneTitle,   widget: string}
+              - {label: Phone,        name: phoneNumber,  widget: string}
+
+          - label: 'Social Links'
+            name: 'socialLinks'
+            widget: 'list'
+            fields:
+              - {label: Name,  name: title, widget: string}
+              - {label: Link,  name: link,  widget: string}
+
+          - label: 'About Us'
+            name: 'aboutUs'
+            fields:
+              - {label: Left text,  name: leftText,   widget: string}
+              - {label: Main text,  name: mainText,   widget: string}
+              - {label: Right text, name: rightText,  widget: string}
+              - {label: Site Icon (Must be 512x512 or larger square PNG), name: siteicon, widget: image, default: "/icon.png"}
+              - {label: Show Icon in Menu, name: showmenu, widget: boolean}
+
+      - label: "Main page"
+        name: "mainPage"
+        format: 'json'
+        file: "content/single-data/main.json"
+        fields:
+          - {label: Title, name: contentTitle, widget: string}

@@ -1,0 +1,38 @@
+.banners_slide-block {
+  flex: 0 0 100%;
+  @supports ((object-fit: cover) or (-ms-object-fit: cover) or (-o-object-fit: cover)) {
+    flex: 1 1 auto;
+  }
+}
+
+.agile__dots {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 5;
+  line-height: 1;
+}
+
+.agile__dot {
+  display: inline-block;
+  &:last-child {margin-right: 0;}
+  &.agile__dot--current button {
+    background: $col-primary;
+    border-color: $white;
+  }
+  button {
+    font-size: 0;
+    display: none;
+    @include media('>=presmall') {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $white;
+      border: 1px solid $col-txt2;
+      cursor: pointer;
+      margin-right: 10px;
+      padding: 0;
+    }
+  }
+}

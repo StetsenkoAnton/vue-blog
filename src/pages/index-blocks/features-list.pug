@@ -1,0 +1,12 @@
+ul.main-features_list
+  li(
+    v-for="item in content.featuresList"
+    :key="item.link"
+    )
+    g-link.main-features_link(:to="item.link")
+      .main-features_icon-holder
+        i(aria-hidden="true"
+          :class="item.iconClass"
+        )
+      h5.h5 {{item.featureTitle}}
+      p {{item.featureDescription}}

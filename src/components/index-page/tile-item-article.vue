@@ -1,0 +1,42 @@
+<template lang="pug">
+  article.tile_article
+    .tile-article_label {{ itemData.type }}
+
+    router-link.tile-article_link(to="/some-link")
+      img.tile-article_img(:src="itemData.thumbnail")
+
+    .tile-article_body
+      .tile-article_info
+        .tile-article_publish.ellipsis
+          time {{itemData.date}}
+        ul.tile-article_meta-list
+          li
+            | {{ itemData.viewsCount || 0}}&nbsp;views
+          li
+            | {{ itemData.commentsCount || 0}}&nbsp;comments
+
+      h3.tile-article_title
+        router-link(to="/some-link") {{ itemData.title }}
+
+      .tile-article_tagline
+        p(v-if="itemData.leadPar") {{ itemData.leadPar }}
+        .tile-article_rating.rating-component(v-else)
+          .stars-holder
+            i(aria-hidden="true"
+              v-for="rating in [1,2,3,4,5]"
+              :class="{'empty': rating}"
+            ).fa.fa-star-o
+
+</template>
+
+<script>
+
+export default {
+  name: 'TileItemArticle',
+  props: {
+    itemData: {
+      type: Object,
+    }
+  },
+}
+</script>
