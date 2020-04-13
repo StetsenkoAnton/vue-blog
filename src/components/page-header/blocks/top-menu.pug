@@ -2,28 +2,27 @@
   .header_row.header_row--main
     .head-main_col.head-main_col--logo
       g-link(to="/" tabindex="1")
-        g-image(src="https://www.ssa.group/images/logo-sm.png?v=1.0" width="186" height="auto")
+        g-image(src="https://gridsome.org/logos/logo-normal.svg" width="186" height="auto")
 
     .head-main_col.head-main_col--search
       .header_search-holder(
       :class="{'active': autocomplete.isShowInput}"
       )
         input.header_search(type="text", placeholder="Search for pros, galleries, products and more"
-        v-model="autocomplete.searchText"
-        @focus="autocomplete.isOpen = true"
-        @blur="autocomplete.isOpen = false"
-
+          v-model="autocomplete.searchText"
+          @focus="autocomplete.isOpen = true"
+          @blur="autocomplete.isOpen = false"
         )
         button.fa.fa-search.header_search-btn.btn.btn--link( type="button"
-        @click="autocomplete.isShowInput = !autocomplete.isShowInput"
+          @click="autocomplete.isShowInput = !autocomplete.isShowInput"
         )
         //- --------------------- autocomplete start ---------------------- -//
         -
           const searchList = [
-          {"icon":"fa-cube", "section":"Virtual Rooms", "constant": "VIRTUAL_ROOMS_LIST"},
-          {"icon":"fa-television", "section":"Media List", "constant": "MEDIA_LIST"},
-          {"icon":"fa-star", "section":"Find a Pro", "constant": "FIND_PRO_ADVANCED"},
-          {"icon":"fa-picture-o", "section":"Gallery", "constant": "PHOTOS_LIST"}
+            {"icon":"fa-cube", "section":"Virtual Rooms", "constant": "VIRTUAL_ROOMS_LIST"},
+            {"icon":"fa-television", "section":"Media List", "constant": "MEDIA_LIST"},
+            {"icon":"fa-star", "section":"Find a Pro", "constant": "FIND_PRO_ADVANCED"},
+            {"icon":"fa-picture-o", "section":"Gallery", "constant": "PHOTOS_LIST"}
           ]
 
         .search-autocomplete_wrapper(

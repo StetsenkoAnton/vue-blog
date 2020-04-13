@@ -2,7 +2,7 @@
   footer.page_footer(v-if="content")
     .content-wrap.content-indent.footer_content-wrap
       .footer_col.footer_contacts
-        g-image(src="https://www.ssa.group/images/logo-sm.png?v=1.0" width="186" height="auto").medium-show
+        g-image(src="https://gridsome.org/logos/logo-normal.svg" width="186" height="auto").medium-show
         dl.footer_contact-dl.medium-show
           template(v-for="contact in content.contacts")
             dt {{ contact.title }}
@@ -38,7 +38,7 @@
             router-link(:to="htPage.url_key") {{htPage.title}}
 
       .footer_col.footer_about
-        g-image(src="https://www.ssa.group/images/logo-sm.png?v=1.0" width="186" height="auto").medium-hide
+        g-image(src="https://gridsome.org/logos/logo-normal.svg" width="186" height="auto").medium-hide
         .inner-body.large-show
           h3.footer_item-title about us
           p {{content.aboutUs.mainText}}
