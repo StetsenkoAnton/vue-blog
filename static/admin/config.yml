@@ -23,7 +23,7 @@ collections:
         required: false
         collection: "authorsTest"
         searchFields: ["socialLinks.author_name"]
-        valueField: "author_name"
+        valueField: "socialLinks.author_name"
         multiple: true
       - {label: "Body",           name: "body",       widget: "markdown"}
 
