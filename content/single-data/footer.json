@@ -4,12 +4,10 @@
     "mainText": "From intuitive virtual design tools to essential DIY home improvements and everything in between, House helps take dream homes from conception to reality.",
     "rightText": "All rights reserved"
   },
-  "contacts": {
-    "email": "info@house.com",
-    "emailTitle": "Email",
-    "phoneNumber": "201-655-6523",
-    "phoneTitle": "Phone"
-  },
+  "contacts": [
+    { "title": "Phone", "value": "201-655-6523" },
+    { "title": "Email", "value": "info@house.com" }
+  ],
   "pages": [
     {
       "source": "staticPage",

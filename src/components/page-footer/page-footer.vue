@@ -9,12 +9,10 @@
       .footer_col.footer_contacts
         +footer-logo("/", "medium-show", "new-logo-footer")
         dl.footer_contact-dl.medium-show
-          dt {{ content.contacts.phoneTitle }}
-          dd
-            a(:href="'tel:'+content.contacts.phoneNumber") {{ content.contacts.phoneNumber }}
-          dt {{content.contacts.emailTitle}}
-          dd
-            a(:href="'mailto:'+content.contacts.email") {{content.contacts.email}}
+          template(v-for="contact in content.contacts")
+            dt {{ contact.title }}
+            dd
+              a(:href="'tel:'+contact.value") {{ contact.value }}
         ul.footer_social-list
           li(
             v-for="social in content.socialLinks"
@@ -33,9 +31,7 @@
       .footer_col.footer_company
         h3.footer_item-title Company
         ul.footer_links-list
-          li(
-          v-for="page in content.pages"
-          )
+          li(v-for="page in content.pages")
             router-link(:to="page.url_key") {{page.title}}
 
       .footer_col.footer_tips-links
