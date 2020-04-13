@@ -28,30 +28,6 @@
       "hideFeature": false,
       "iconClass": "fa fa-shopping-cart",
       "link": "/marketplace"
-    },
-    {
-      "featureDescription": "Tons of DIY home improvement tips written by our experts",
-      "featureTitle": "HOUSE TIPS",
-      "hideFeature": false,
-      "iconClass": "fa fa-book",
-      "link": "/housetips"
-    }
-  ],
-  "mainRoles": [
-    {
-      "description": "For retailers of home goods, House is a new way to feature the items you distribute. Sign up for free and talk to our team about how we can help your business reach the next level.",
-      "image": "https://cdn3.housetipster.com/resize_100x0/static-img/role-img-1.png",
-      "title": "FOR RETAILERS"
-    },
-    {
-      "description": "From intuitive virtual design tools to essential DIY home improvements, and everything in between, House helps take dream homes from concept to reality.",
-      "image": "https://cdn3.housetipster.com/resize_100x0/static-img/role-img-2.png",
-      "title": "FOR MANUFACTURERS"
-    },
-    {
-      "description": "For service professionals, like plumbers and electricians, House introduces your business to whole new community of homeowners and other industry professionals who are seeking your skills.",
-      "image": "https://cdn3.housetipster.com/resize_100x0/static-img/role-img-3.png",
-      "title": "FOR PROFESSIONALS"
     }
   ],
   "mainRolesTitle": "HELP YOUR HOME DESIGN BUSINESS GROW",
