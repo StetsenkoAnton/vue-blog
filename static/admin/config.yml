@@ -19,7 +19,7 @@ collections:
       - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
       - {label: "Tags",           name: "tags",       widget: "relation", required: false,
         collection: "single-data",
-        searchFields: [mainPage.articleTags],
+        searchFields: [mainPage.articleTags.tag],
         valueField: "tag",
         multiple: true}
       - {label: "Body",           name: "body",       widget: "markdown"}

@@ -1,23 +1,23 @@
 {
-  "contentTitle": "Interior Design News, Products, Videos, Photos & Tips",
+  "contentTitle": "This is a site for exploring the possibilities of Gridsome.",
   "featuresList": [
     {
       "featureDescription": "Customize your dream home with billions of options",
-      "featureTitle": "VIRTUAL ROOMS",
+      "featureTitle": "ROOMS",
       "hideFeature": false,
       "iconClass": "ht vr-box",
       "link": "/virtual-rooms/list"
     },
     {
       "featureDescription": "Find trusted home improvement professionals",
-      "featureTitle": "OUR PROS",
+      "featureTitle": "PROS",
       "hideFeature": false,
       "iconClass": "fa fa-users",
       "link": "/find-pro"
     },
     {
       "featureDescription": "Helpful forums & informative reviews from other users",
-      "featureTitle": "DESIGN DEN",
+      "featureTitle": "DESIGN",
       "hideFeature": false,
       "iconClass": "ht compass",
       "link": "/forum-coming"
@@ -30,7 +30,7 @@
       "link": "/marketplace"
     }
   ],
-  "mainRolesTitle": "HELP YOUR HOME DESIGN BUSINESS GROW",
+  "mainRolesTitle": "HELP YOUR DESIGN BUSINESS GROW",
   "mainTile": {
     "banners": [
       {
@@ -42,7 +42,7 @@
             "_id": "5a8ef708aa717f576391765c",
             "bannerSize": "big",
             "description": "",
-            "thumbnail": "https://cdn3.housetipster.com/crop_30-112x0-40/banner%2F194md0o26lds000000000_1ust2j6n0b4wcg0o8c44g.png",
+            "thumbnail": "",
             "title": "asdasd",
             "url": "asdad"
           },
@@ -50,351 +50,15 @@
             "_id": "5a8ef708aa717f576391765b",
             "bannerSize": "big",
             "description": "",
-            "thumbnail": "https://cdn3.housetipster.com/crop_0-800x157-288/banner%2F3xxfboz1ua60000000000_1asdasd.png",
+            "thumbnail": "",
             "title": "asd",
             "url": "asd"
           }
         ],
         "tilesCount": "2"
       }
-    ],
-    "entities": [
-      {
-        "tile1": {
-          "viewsCount": 23,
-          "tileTitle": "",
-          "slug": "Christopher Grubb Highlights Virtual Rooms at The International Surface Event",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-4032x189-2272/thumbnails%2F2s6v5cs6qzi0000000000_c1a2613a_5d60_4243_bea3_5132b191b859___Copy.jpg",
-          "date": "Mar 12 2018",
-          "isSponsored": false,
-          "title": "Christopher Grubb Highlights Virtual Rooms at The International Surface Event",
-          "_id": "5a86b067c534ca68ae772618",
-          "type": "article",
-          "id": 1784,
-          "commentsCount": 3,
-          "description": "Interior designer Christopher Grubb shares his experiences working with House’s interactive virtual design tools",
-          "category": "ssaTest",
-          "subcategory": "Industry Events 2018"
-        },
-        "tile2": {
-          "viewsCount": 24,
-          "tileTitle": "",
-          "slug": "powder-room-power",
-          "thumbnail": "https://cdn3.housetipster.com/thumbnails/56fd7968d9416ad94a8346d4.png",
-          "date": "Jul 21 2017",
-          "isSponsored": false,
-          "title": "Powder Room Power",
-          "_id": "56fd7968d9416ad94a8346d4",
-          "type": "sponsoredArticle",
-          "id": 119,
-          "commentsCount": 0,
-          "description": "Though small in size, powder rooms can be big on design if you have the courage to get creative.",
-          "category": "interior-design-tips",
-          "subcategory": "artwork-and-accents"
-        },
-        "tile3": {
-          "viewsCount": 35574,
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://cdn3.housetipster.com/resize_300x0--crop_16-1482x0-834/project-cover%2Fepcuser0rio8oc84w4ok_4.edit.jpg",
-          "date": "Feb 26 2018",
-          "domainVideoId": "91326010",
-          "videoUrl": "https://vimeo.com/91326010",
-          "videoType": "vimeo",
-          "title": "Rawlins Open Kitchen",
-          "_id": "5a9464abf1108f7a241d7fa2",
-          "type": "extVideo",
-          "id": "5a9464abf1108f7a241d7fa2",
-          "commentsCount": 0,
-          "description": "Artists and directors from around the globe give their opinions on the brand new NUKE STUDIO VFX, editorial and finishing application - coming in late 2014. All the people featured have seen the product in action. Find out more at http://www.thefoundry.co.uk/about-us/news-awards/nuke-studio\n\nFeaturing:\nChris Smith, Independant Commercials Director\nScott Metzger, Visual Effects Artist\nShervin Shoghian, Independent Feature Film Producer and Director\nJeff Ranasinghe, Independent Music Video Director and Producer\nBrandon Fayette, VFX Lead at Bad Robot\nLudo Fealy, VFX Supervisor at nineteentwenty\nJeff Heusser, Visual Effects Artist and Co-founder of FXGuide"
-        },
-        "tile4": {
-          "viewsCount": 96,
-          "tileTitle": "",
-          "slug": "tiffany-studio",
-          "thumbnail": "https://cdn3.housetipster.com/resize_300x0--crop_16-1482x0-834/project-cover%2F57is2f74o0g80s0s8o4w_Tiffany_Hanken_Design.jpg",
-          "date": "Feb 13 2018",
-          "title": "Tiffany Studio",
-          "_id": "59fb55757ec04c4135f4804b",
-          "type": "project",
-          "commentsCount": 0,
-          "description": "Tiffany Studio is simple yet stunning with its sleek white and gray island."
-        },
-        "tile5": {
-          "viewsCount": 3891,
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://i.vimeocdn.com/video/442960664_960x540.jpg?r=pad",
-          "date": "Feb 26 2018",
-          "domainVideoId": "69954294",
-          "videoUrl": "https://vimeo.com/69954294",
-          "videoType": "vimeo",
-          "title": "Eduard Schneider's DitoGear Testimonial",
-          "_id": "5a94716df1108f7a241d7ff7",
-          "type": "extVideo",
-          "id": "5a94716df1108f7a241d7ff7",
-          "commentsCount": 0,
-          "description": "Edi Schneider has been using DitoGear™ products since late 2012.\nIt's always very pleasing to see our clients using the gear that extensively and with such great results.\n\nIf you're interested in DitoGear™ motion control equipment, that's probably the best moment to buy - Flagship products ship with 15% instant discount until August 5th, 2013.\nLearn more at www.ditogear.com/summer2013.\n\nFor more work of Edi Schneider please check:\nhttp://vimeo.com/eduardschneider\nhttp://www.schneiderproductions.com/"
-        }
-      },
-      {
-        "tile1": {
-          "viewsCount": 215,
-          "vendorsCount": 0,
-          "is360View": true,
-          "tileTitle": "",
-          "slug": "the-kittila-childs-bedroom",
-          "thumbnail": [
-            "https://cdn3.housetipster.com/crop_0-1424x171-803/vr-thumbnail%2F1gb5e8p4ji68484ssc4w8_Capture_2017_10_05_at_16.39.30.png",
-            "https://cdn3.housetipster.com/crop_0-1500x28-844/vr-thumbnail%2F2yjaf741c2kgk0wco4w4o_The_Kittila_Child_s_Bedroom__3_.jpeg",
-            "https://cdn3.housetipster.com/crop_0-1500x28-844/vr-thumbnail%2F1wpjokykfklc0gcg0s4kk_The_Kittila_Child_s_Bedroom__6_.jpeg",
-            "https://cdn3.housetipster.com/crop_0-1500x28-844/vr-thumbnail%2F2asfyjp296ckw0s448c4s_The_Kittila_Child_s_Bedroom__5_.jpeg"
-          ],
-          "date": "Jan 25 2018",
-          "title": "The Kittila Child’s Bedroom",
-          "componentsCount": 17,
-          "_id": "59ca7f653138e55cc360d869",
-          "type": "room",
-          "commentsCount": 0,
-          "description": "Keeping your kid’s room cute but classy takes effort. Thankfully, the Kittila Child’s Bedroom covers all the bases."
-        },
-        "tile2": {
-          "viewsCount": 272,
-          "tileTitle": "",
-          "slug": "rawlins-open-kitchen",
-          "thumbnail": "https://cdn3.housetipster.com/crop_16-1482x0-834/project-cover%2Fepcuser0rio8oc84w4ok_4.edit.jpg",
-          "date": "Jan 03 2017",
-          "title": "Rawlins Open Kitchen",
-          "_id": "59fb4aff7ec04c4135f47fec",
-          "type": "project",
-          "commentsCount": 0,
-          "description": "Rawlins Open Kitchen is perfect for entertaining with plenty of space and a large kitchen table."
-        },
-        "tile3": {
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-607x5-624/other-loaded-files%2F322l52uehlk4c8g0o4o00_tomtrill.jpg",
-          "date": "",
-          "title": "Exclusive Homes",
-          "_id": "5a15e280afed990b8ec81f1b",
-          "type": "image",
-          "link": "https://housetipster.com/profile/58481f638f4de854d8c6eed2",
-          "id": "5a15e280afed990b8ec81f1b",
-          "commentsCount": 0,
-          "description": ""
-        },
-        "tile4": {
-          "productLink": "https://housetipster.com/profile/58c305780245c846f3d9e8af",
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://cdn3-642f.kxcdn.com/crop_0-283x0-292/video-thumbnail%2F100k14wryqi8oowk8ckss_toster.jpg",
-          "date": "",
-          "videoUrl": "https://cdn3-642f.kxcdn.com/video%2Fqe43b8fe9fkw0w80s0kk_SMALL_TOASTER_MOTION_TILE__1_.mp4",
-          "title": "Smeg Toaster",
-          "_id": "594ac06800822523cea3f4bf",
-          "type": "video",
-          "id": "594ac06800822523cea3f4bf",
-          "commentsCount": 0,
-          "description": ""
-        },
-        "tile5": {
-          "viewsCount": 17,
-          "tileTitle": "",
-          "slug": "how-to-make-a-beautiful-lilac-floral-arrangement-in-5-easy-steps",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-943x0-531/thumbnails%2F4glwzukgj62ocgkgww0gw_Thumb.jpg",
-          "date": "Feb 11 2018",
-          "isSponsored": false,
-          "title": "How to Make a Beautiful Lilac Floral Arrangement in 5 Easy Steps",
-          "_id": "5a78b073befe7c4d294641bd",
-          "type": "article",
-          "id": 1753,
-          "commentsCount": 0,
-          "description": "Usher spring into your home with breathtaking hues of purple, white, and green.",
-          "category": "interior-design-tips",
-          "subcategory": "diy-projects"
-        }
-      },
-      {
-        "tile1": {
-          "viewsCount": 491,
-          "vendorsCount": 0,
-          "is360View": false,
-          "tileTitle": "",
-          "slug": "oceanview-living-room",
-          "thumbnail": [
-            "https://cdn3.housetipster.com/vr-thumbnail/dc6e5265-ed8d-4346-8486-1ee49709dc1b_6yj2qrrwfyo8k04gg0oww.png"
-          ],
-          "date": "Jan 25 2018",
-          "title": "Oceanview Living Room",
-          "componentsCount": 11,
-          "_id": "58c81f6ad18b816adee5d632",
-          "type": "room",
-          "commentsCount": 0,
-          "description": "Contemporary style living room with two different living spaces, bringing the outdoors in."
-        },
-        "tile2": {
-          "viewsCount": "107",
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://i.ytimg.com/vi/OUNcLXZPEoA/maxresdefault.jpg",
-          "date": "Feb 25 2018",
-          "videoUrl": "https://youtu.be/OUNcLXZPEoA",
-          "videoType": "youtube",
-          "title": "Badgley Mischka Furniture Showcase at  High Point Market",
-          "_id": "59fb45e67ec04c4135f47fd1",
-          "type": "extVideo",
-          "id": "59fb45e67ec04c4135f47fd1",
-          "commentsCount": 0,
-          "description": "Mark Badgley and James Mischka, the designers behind Badgley Mischka, discuss their sleek and modern home collection at High Point. These designers specialize in creating fashionable and upscale furniture for bedrooms and living rooms and even make dog dishes. One of their greatest pieces is a beautiful black desk with a surfboard finish. They feel fashion and home can complement each other well. When coming up with ideas for furniture they always make sure to stay true to their brand. The furniture doesn't have to follow a trend but should display the meaning behind their company, which is elegance. \n\nYou can view and shop their collections here:\n\nhttps://www.badgleymischka.com/home-collection/\n\n#house #badgleymischka #homecollection #design #furnitureshowcase #highpointmarket #interiordesign #bedroom #livingroom"
-        },
-        "tile3": {
-          "viewsCount": 44,
-          "tileTitle": "",
-          "slug": "frank-owen-gehry-educates-inspires-and-delights-at-las-vegas-market",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-943x0-531/thumbnails%2F5jyqskbnp04c0k84wcwsk_Thumb.jpg",
-          "date": "Feb 02 2018",
-          "isSponsored": false,
-          "title": "Frank Owen Gehry Educates, Inspires, and Delights at Las Vegas Market",
-          "isPress": true,
-          "_id": "5a74bd5000837f4d1e58d646",
-          "type": "press",
-          "commentsCount": 0,
-          "description": "Frank Owen Gehry has been a force in the world of architecture and design for over eight decades, and he’s become one of the world’s best known contemporary architects.",
-          "category": "industry-events-2018",
-          "subcategory": "las-vegas-market-winter-2018"
-        },
-        "tile4": {
-          "viewsCount": "4544",
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://i.ytimg.com/vi/WKTOVZzA7sE/hqdefault.jpg",
-          "date": "Feb 27 2018",
-          "videoUrl": "https://youtu.be/WKTOVZzA7sE",
-          "videoType": "youtube",
-          "title": "Alder & Tweed Goes Round World to Create Style for Everyday Customers | Pro Perspectives",
-          "_id": "59ad67d8382c337e020e77b8",
-          "type": "extVideo",
-          "id": "59ad67d8382c337e020e77b8",
-          "commentsCount": 0,
-          "description": "Some design companies have only the elite in mind, but Alder & Tweed Home Outfitters is all about bringing style and design to the everyday consumer.\n\nHouse met with Ryan Humphrey of this family-owned company at Las Vegas Market this summer, and learned how inspirations come to the United States – and to your own living room or dining room – sometimes from afar.\n\nA new upholstery line showcased at Market is an example of fashion-forward designer fabrics from overseas that can make for stylish seating when paired with exposed hardwood frames.\n\nWe found a lot of mixed mediums in this Utah company’s designs, such as top-grain leathers, solid hardwood, marble, and even metals.\n\n“We design everything from start to finish ourselves,” Humphrey told House.\n\nOften that means visiting tanneries, fabric mills, and factories, and collaborating with a design team for the freshest styles to hit your home.\n\nFind Alder & Tweed products in both boutiques and mass retail stores including international markets."
-        },
-        "tile5": {
-          "productLink": "https://housetipster.com/media-article/media/pres-clinton-inspires-at-greenbuild-expo",
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-578x0-596/video-thumbnail%2Fwt3eh4l0v808wocog048_Bill_Clinton_jpeg_tile.jpg",
-          "date": "",
-          "videoUrl": "https://cdn3-642f.kxcdn.com/video%2F644vlk4doxs0wgsw80cs4_Bill_Clinton_Large_Tile.mp4",
-          "title": "President Bill Clinton at Greenbuild",
-          "_id": "5a0a41b948d0e47e3114cd53",
-          "type": "video",
-          "id": "5a0a41b948d0e47e3114cd53",
-          "commentsCount": 0,
-          "description": ""
-        }
-      },
-      {
-        "tile1": {
-          "zoneId": "282178",
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://cdn3.housetipster.com/empty.jpg",
-          "date": "",
-          "title": "Adbutler Zone New Jersey",
-          "content": "<img class=\"article-item_pic\" src=\"https://adbutler-fermion.com/getad.img/;libID=416988\" ng-src=\"https://adbutler-fermion.com/getad.img/;libID=416988\"/>",
-          "_id": "5a01ebf246691eb485a0915e",
-          "type": "adbutler",
-          "link": "https://servedbyadbutler.com/redirect.spark?MID=169686&plid=679876&setID=282178&channelID=0&CID=199521&banID=519507771&PID=0&textadID=0&tc=1&mt=1519912796736216&hc=7675693f8db4cb92d44b5747ec3f013021b3e4e9&location=",
-          "commentsCount": 0,
-          "description": ""
-        },
-        "tile2": {
-          "productLink": "https://youtu.be/k12MdMFdw1o",
-          "tileTitle": "",
-          "slug": "",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-578x0-596/video-thumbnail%2F6bew43q7sm80ocwkgw04_scott_living.jpg",
-          "date": "",
-          "videoUrl": "https://cdn3-642f.kxcdn.com/video%2F6b1t9lve5a4gs0k8wskk0_Scott_Living_282x292.mp4",
-          "title": "Scott Living 2",
-          "_id": "59ef5b68d518f44e9e8d939b",
-          "type": "video",
-          "id": "59ef5b68d518f44e9e8d939b",
-          "commentsCount": 0,
-          "description": ""
-        },
-        "tile3": {
-          "viewsCount": 14,
-          "tileTitle": "",
-          "slug": "oven-buying-guide-tips-on-oven-capacity-wall-ovens-and-more",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-2493x178-1412/thumbnails%2F42ue02tlon0g8kswcgg0s_shutterstock_72200836.jpg",
-          "date": "Feb 11 2018",
-          "isSponsored": false,
-          "title": "Oven Buying Guide Tips on Oven Capacity, Wall Ovens, and More",
-          "_id": "5a7cc7db883b825c2998a4bc",
-          "type": "article",
-          "id": 1767,
-          "commentsCount": 0,
-          "description": "Looking to replace your oven? Don’t know whether to go single or double? Gas or electric? Slide-in or freestanding? This guide’s got you covered.",
-          "category": "kitchen-tips",
-          "subcategory": "cooking"
-        },
-        "tile4": {
-          "viewsCount": 180,
-          "tileTitle": "",
-          "slug": "red-white-and-blue",
-          "thumbnail": "https://cdn3-642f.kxcdn.com/crop_0-1492x0-840/project-cover%2F58a503vvs8w0g0kk8kckg_432_O_RW_Hi_Res_08.jpgedit.jpg",
-          "date": "Aug 07 2017",
-          "title": "Red, White and Blue",
-          "_id": "597a3489f6d7e654acaf7e1f",
-          "type": "project",
-          "commentsCount": 0,
-          "description": "A lemonade porch at this colonial house combines Americana with comfort for relaxing family gatherings."
-        },
-        "tile5": {
-          "viewsCount": 116,
-          "tileTitle": "",
-          "slug": "customatic-adjustable-bedz-presents-innovative-sexy-product-line-at-las-vegas-market",
-          "thumbnail": "https://cdn3.housetipster.com/crop_0-942x0-531/thumbnails%2Fiq9ycj6n6m0w8cc4c0go_bedzthumb2.png",
-          "date": "Jan 31 2018",
-          "isSponsored": false,
-          "title": "Customatic Adjustable Bedz Presents Innovative, Sexy Product Line at Las Vegas Market",
-          "isPress": true,
-          "_id": "5a720b1243863472823dfd75",
-          "type": "press",
-          "commentsCount": 0,
-          "description": "Customatic Adjustable Bedz uses technology and innovation in their line of bed frames to ensure an engaging, exciting sleeping experience.",
-          "category": "industry-events-2018",
-          "subcategory": "las-vegas-market-winter-2018"
-        }
-      }
     ]
   },
-  "slider": [
-    {
-      "buttonVisibility": true,
-      "slideImage": "https://cdn3-642f.kxcdn.com/crop_0-1600x30-511/slide-thumbnail%2F37cpeya8tmw4gg0gokkos_casa_verona_3.jpg",
-      "slideText": "House is a full-service website for homeowners, interior designers, homebuilders, architects, home service professionals, and potential homebuyers.",
-      "slideTitle": "Home Design Tools and Tips"
-    },
-    {
-      "buttonVisibility": true,
-      "slideImage": "https://cdn3-642f.kxcdn.com/crop_0-1600x30-511/slide-thumbnail%2F6x5g5d9rzp4wk00kc4wkw_casa_verona_lines2.jpg",
-      "slideText": "The latest home and design news from industry leaders.",
-      "slideTitle": "Home Design Tools and Tips"
-    },
-    {
-      "buttonVisibility": true,
-      "slideImage": "https://cdn3-642f.kxcdn.com/crop_0-1600x30-511/slide-thumbnail%2F5fe67cfnrncw4gkogs4c0_casa_verona_2.jpg",
-      "slideText": "Get interior design inspiration from thousands of House's exclusive photos of both trendy and traditional home decor.",
-      "slideTitle": "Home Design Tools and Tips"
-    },
-    {
-      "buttonVisibility": true,
-      "slideImage": "https://cdn3-642f.kxcdn.com/crop_0-1600x30-511/slide-thumbnail%2F4w050alyra80o84ow4oco_casa_verona_3.jpg",
-      "slideText": "Select from thousands of products to find exactly what you need to enhance your home decor.",
-      "slideTitle": "Home Design Tools and Tips"
-    }
-  ],
   "articleTags": [
     {
       "tag": "Design"
