@@ -45,6 +45,7 @@ collections:
         fields:
           - label: 'Contacts'
             name: 'contacts'
+            widget: object
             fields:
               - {label: Email title,  name: emailTitle,   widget: string}
               - {label: Email,        name: email,        widget: string}
@@ -63,7 +64,7 @@ collections:
             widget: object
             fields:
               - {label: Left text,  name: leftText,   widget: string}
-              - {label: Main text,  name: mainText,   widget: string}
+              - {label: Main text,  name: mainText,   widget: text}
               - {label: Right text, name: rightText,  widget: string}
               - {label: Site Icon (Must be 512x512 or larger square PNG), name: siteicon, widget: image, default: "/icon.png"}
               - {label: Show Icon in Menu, name: showmenu, widget: boolean}
