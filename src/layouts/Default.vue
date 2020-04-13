@@ -31,15 +31,6 @@
       //LoadSpinner
     },
   }
-  // {"tag": "Design"},
-  // {"tag": "Internet"},
-  // {"tag": "UX"},
-  // {"tag": "Music"},
-  // {"tag": "Dev"},
-  // {"tag": "Setup"},
-  // {"tag": "City"},
-  // {"tag": "Photography"},
-  // {"tag": "Birthdate"}
 </script>
 <style lang="scss">
   @import '../scss/_common.scss';

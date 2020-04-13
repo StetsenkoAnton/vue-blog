@@ -17,22 +17,8 @@ collections:
       - {label: "Title",          name: "title",      widget: "string"}
       - {label: "Publish Date",   name: "date",       widget: "datetime", format: "MMMM Do, YYYY"}
       - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
-      - {label: "Tags",           name: "tags",       widget: "select", options: singleData.mainPage.articleTags, multiple: true, required: false}
+      - {label: "Tags",           name: "tags",       widget: "select",   required: false, multiple: true, options: ["Design", "Internet", "UX", "Music", "Dev", "Setup", "Photography"]}
       - {label: "Body",           name: "body",       widget: "markdown"}
-
-  - name: authorsTest
-    label: Authors
-    folder: "content/authors"
-    create: true
-    slug: '{{author_name}}'
-    fields:
-      - {label: Name, name: author_name, widget: string}
-      - label: 'Social Links'
-        name: 'socialLinks'
-        widget: 'list'
-        fields:
-          - {label: Name,  name: author_name, widget: string}
-          - {label: Link,  name: link,  widget: string}
 
   - name: "media"
     label: "Media"
@@ -45,7 +31,7 @@ collections:
       - {label: "Title",          name: "title",      widget: "string"}
       - {label: "Publish Date",   name: "date",       widget: "datetime", format: "MMMM Do, YYYY"}
       - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
-      - {label: "Tags",           name: "tags",       widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false, multiple: true}
+      - {label: "Tags",           name: "tags",       widget: "select",   required: false, multiple: true, options: ["Design", "Internet", "UX", "Music", "Dev", "Setup", "Photography"]}
       - {label: "Lead parag",     name: "leadPar",    widget: "text",     hint: "Show in the cards", pattern: ['.{0,120}', "Must have no more 120 characters"]}
       - {label: "Body",           name: "body",       widget: "markdown"}
 
@@ -87,10 +73,3 @@ collections:
         file: "content/single-data/main.json"
         fields:
           - {label: Title, name: contentTitle, widget: string}
-          - label: 'Tag'
-            name: 'articleTags'
-            widget: 'list'
-            fields:
-              - {label: Name,   name: label,  widget: string}
-              - {label: Value,  name: value,  widget: string}
-

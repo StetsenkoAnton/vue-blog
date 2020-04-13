@@ -58,13 +58,5 @@
         "tilesCount": "2"
       }
     ]
-  },
-  "articleTags": [
-    { "label": "Design", "value": "Design" },
-    { "label": "Internet", "value": "Internet" },
-    { "label": "UX", "value": "UX" },
-    { "label": "Chicago", "value": "ORD" },
-    { "label": "Paris", "value": "CDG" },
-    { "label": "Tokyo", "value": "HND" }
-  ]
+  }
 }
