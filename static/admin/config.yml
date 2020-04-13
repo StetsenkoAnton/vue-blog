@@ -17,18 +17,7 @@ collections:
       - {label: "Title",          name: "title",      widget: "string"}
       - {label: "Publish Date",   name: "date",       widget: "datetime", format: "MMMM Do, YYYY"}
       - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
-      - label: "Align Content"
-        name: "align"
-        widget: "select"
-        options: ["left", "center", "right"]
-      - label: "Tags"
-        name: "tags"
-        widget: "relation"
-        required: false
-        collection: "authorsTest"
-        searchFields: ["socialLinks.author_name"]
-        valueField: "author_name"
-        multiple: true
+      - {label: "Tags",           name: "tags",       widget: "select", options: singleData.mainPage.articleTags, multiple: true, required: false}
       - {label: "Body",           name: "body",       widget: "markdown"}
 
   - name: authorsTest
@@ -102,5 +91,6 @@ collections:
             name: 'articleTags'
             widget: 'list'
             fields:
-              - {label: Name,  name: tag,  widget: string}
+              - {label: Name,   name: label,  widget: string}
+              - {label: Value,  name: value,  widget: string}
 
