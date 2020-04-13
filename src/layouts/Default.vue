@@ -4,8 +4,8 @@
     .header_heightfix
     slot
     page-footer
-    the-overlay
     //-load-spinner
+    //the-overlay
 </template>
 
 <!--<static-query>-->
@@ -29,7 +29,7 @@
       PageHeader,
       TheOverlay
       //LoadSpinner
-    }
+    },
   }
 </script>
 <style lang="scss">
