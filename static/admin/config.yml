@@ -20,21 +20,7 @@ collections:
       - {label: "Tags",           name: "tags",       widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
       - {label: "Body",           name: "body",       widget: "markdown"}
       -
-  - name: "media"
-    label: "Media"
-    folder: "content/media"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    format: 'json'
-    sort: "date:desc"
-    fields:
-      - {label: "Title",          name: "title",      widget: "string"}
-      - {label: "Publish Date",   name: "date",       widget: "datetime", format: "MMMM Do, YYYY"}
-      - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
-      - {label: "Tags",           name: "tags",       widget: "relation", collection: "blogcategories", searchFields: ["title"], valueField: "title", displayFields: ["title"], required: false}
-      - {label: "Lead parag",     name: "leadPar",    widget: "string", pattern: ['.{120,}', "Must have at least 120 characters"]}
-      - {label: "Lead parag",     name: "leadPar1",    widget: "text", pattern: ['.{120,}', "Must have at least 120 characters"]}
-      - {label: "Body",           name: "body",       widget: "markdown"}
+
 
   - name: "single-data"
     label: "Single data"
