@@ -60,20 +60,14 @@
     ]
   },
   "articleTags": [
-    {
-      "tag": "Design"
-    },
-    {
-      "tag": "UX"
-    },
-    {
-      "tag": "Dev"
-    },
-    {
-      "tag": "City"
-    },
-    {
-      "tag": "Birthdate"
-    }
+    {"tag": "Design"},
+    {"tag": "Internet"},
+    {"tag": "UX"},
+    {"tag": "Music"},
+    {"tag": "Dev"},
+    {"tag": "Setup"},
+    {"tag": "City"},
+    {"tag": "Photography"},
+    {"tag": "Birthdate"}
   ]
 }
