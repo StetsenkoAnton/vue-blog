@@ -21,18 +21,18 @@ collections:
         name: "tags"
         widget: "relation"
         required: false
-        collection: "authors"
+        collection: "authorsTest"
         searchFields: ["author_name"]
         valueField: "author_name"
         multiple: true
       - {label: "Body",           name: "body",       widget: "markdown"}
 
-  - name: authors
+  - name: authorsTest
     label: Authors
     folder: "content/authors"
     create: true
     slug: '{{title}}'
-    identifier_field: author_name
+    identifier_field: author_nameId
     fields:
       - {label: Name, name: author_name, widget: string}
 
