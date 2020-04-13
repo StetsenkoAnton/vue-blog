@@ -19,8 +19,8 @@
         router-link(to="/some-link") {{ itemData.title }}
 
       .tile-article_tagline
-        p(v-if="itemData.leadPar") {{ itemData.leadPar }}
-        .tile-article_rating.rating-component(v-else)
+        p(v-show="itemData.leadPar") {{ itemData.leadPar }}
+        .tile-article_rating.rating-component(v-show="!itemData.leadPar")
           .stars-holder
             i(aria-hidden="true"
               v-for="rating in [1,2,3,4,5]"
