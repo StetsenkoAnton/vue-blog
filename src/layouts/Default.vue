@@ -5,7 +5,7 @@
     slot
     page-footer
     //-load-spinner
-    the-overlay
+    //the-overlay
 </template>
 
 <!--<static-query>-->

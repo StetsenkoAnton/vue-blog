@@ -1,13 +1,8 @@
 <template lang="pug">
-  - var imgPath = 'https://cdn3.housetipster.com/static-img/'
-  mixin footer-logo(linkTo, visibilityClass, logoPic)
-    router-link.footer_logo-link(to=linkTo class=visibilityClass)
-      img(src=imgPath + logoPic + '.png')
-
   footer.page_footer(v-if="content")
     .content-wrap.content-indent.footer_content-wrap
       .footer_col.footer_contacts
-        +footer-logo("/", "medium-show", "new-logo-footer")
+        g-image(src="https://www.ssa.group/images/logo-sm.png?v=1.0" width="186" height="auto").medium-show
         dl.footer_contact-dl.medium-show
           template(v-for="contact in content.contacts")
             dt {{ contact.title }}
@@ -43,7 +38,7 @@
             router-link(:to="htPage.url_key") {{htPage.title}}
 
       .footer_col.footer_about
-        +footer-logo("/", "medium-hide", "new-logo-footer")
+        g-image(src="https://www.ssa.group/images/logo-sm.png?v=1.0" width="186" height="auto").medium-hide
         .inner-body.large-show
           h3.footer_item-title about us
           p {{content.aboutUs.mainText}}

@@ -1015,7 +1015,7 @@ $mobile-menu-height: 36px;
     line-height: $mobile-menu-height;
   }
   img {
-    width: 31px;
+    //width: 31px;
     height: auto;
     @include media('>=medium') {
       width: 146px;
