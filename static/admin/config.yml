@@ -30,7 +30,8 @@ collections:
   - name: authorsTest
     label: Authors
     folder: "content/authors"
-    slug: '{{title}}'
+    create: true
+    slug: '{{author_name}}'
     identifier_field: author_nameId
     fields:
       - {label: Name, name: author_name, widget: string}
