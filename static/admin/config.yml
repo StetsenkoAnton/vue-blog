@@ -17,13 +17,17 @@ collections:
       - {label: "Title",          name: "title",      widget: "string"}
       - {label: "Publish Date",   name: "date",       widget: "datetime", format: "MMMM Do, YYYY"}
       - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
+      - label: "Align Content"
+        name: "align"
+        widget: "select"
+        options: ["left", "center", "right"]
       - label: "Tags"
         name: "tags"
         widget: "relation"
         required: false
         collection: "authorsTest"
         searchFields: ["socialLinks.author_name"]
-        valueField: "socialLinks.author_name"
+        valueField: "author_name"
         multiple: true
       - {label: "Body",           name: "body",       widget: "markdown"}
 
@@ -32,7 +36,6 @@ collections:
     folder: "content/authors"
     create: true
     slug: '{{author_name}}'
-    identifier_field: author_nameId
     fields:
       - {label: Name, name: author_name, widget: string}
       - label: 'Social Links'
