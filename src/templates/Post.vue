@@ -3,7 +3,7 @@
     <div class="markdown-body">
       <h1>{{ $page.post.title }}</h1>
       <img :src="$page.post.thumbnail" alt="blog">
-      <div v-html="$page.post.body" />
+      <div>{{$page.post.body}}</div>
     </div>
   </BlogLayout>
 </template>

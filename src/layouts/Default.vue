@@ -1,11 +1,11 @@
 <template lang="pug">
   .page
-    page-header
+    //page-header
     .header_heightfix
     slot
-    page-footer
+    //page-footer
     //-load-spinner
-    the-overlay
+    //the-overlay
 </template>
 
 <!--<static-query>-->
