@@ -19,9 +19,9 @@ collections:
       - {label: "Featured Image", name: "thumbnail",  widget: "image",    required: false}
       - {label: "Tags",           name: "tags",       widget: "relation", required: false,
         collection: "singleData",
-        searchFields: ["mainPage.articleTags.tag", "footer.contacts.title"],
+        searchFields: ["mainPage.articleTags"],
         valueField: "tag",
-        displayFields: ["mainPage.articleTags.tag", "footer.contacts.title"],
+        displayFields: ["mainPage.articleTags"],
         multiple: true}
       - {label: "Body",           name: "body",       widget: "markdown"}
 
