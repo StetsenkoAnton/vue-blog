@@ -1,11 +1,11 @@
 <template lang="pug">
   Layout
     .page_main-wrap
-      .page_main(v-if="content")
-        div(v-if="!userIsLogin")
+      .page_main
+        //-div(v-if="!userIsLogin")
           include ./index-blocks/slider.pug
         main.content-wrap.content-indent
-          section.main-features_section(v-if="!userIsLogin")
+          //-section.main-features_section(v-if="!userIsLogin")
             include ./index-blocks/features-list.pug
 
           section.main_title-holder
@@ -17,7 +17,7 @@
 
           tile-list.main-tile_section-list
 
-          section.main-roles_section(v-if="!userIsLogin")
+          //-section.main-roles_section(v-if="!userIsLogin")
             include ./index-blocks/roles.pug
 
 

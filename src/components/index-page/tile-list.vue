@@ -13,9 +13,10 @@
           )
 
       .tile-item_wrap
+        //-v-if="index"
         .tile-item.tile-item--half(
           v-for="(entity, index) in row"
-          v-if="index"
+
         )
           component(
             :is="entity.node.type === 'reddit' ? 'tile-item-image' : 'tile-item-article'"
