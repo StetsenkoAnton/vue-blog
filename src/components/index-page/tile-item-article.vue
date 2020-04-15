@@ -5,7 +5,7 @@
       .tile-article_label gallery
       img.tile-article_img(:src="itemData.thumbnail")
 
-    template(v-else")
+    template(v-else)
       .tile-article_label {{ itemData.type }}
 
       router-link.tile-article_link(to="/some-link")
