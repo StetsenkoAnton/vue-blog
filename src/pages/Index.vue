@@ -15,7 +15,7 @@
               |{{content.contentTitle}}
 
 
-          //tile-list.main-tile_section-list
+          tile-list.main-tile_section-list
 
           //-section.main-roles_section(v-if="!userIsLogin")
             include ./index-blocks/roles.pug
