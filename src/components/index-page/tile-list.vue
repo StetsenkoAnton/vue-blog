@@ -7,9 +7,9 @@
 
       .tile-item_wrap
         .tile-item.tile-item--full
-          //component(
-            /:is="row[0].node.type === 'reddit' ? 'tile-item-image' : 'tile-item-article'"
-            /:item-data="row[0].node"
+          component(
+            :is="row[0].node.type === 'reddit' ? 'tile-item-image' : 'tile-item-article'"
+            :item-data="row[0].node"
             )
 
       .tile-item_wrap
