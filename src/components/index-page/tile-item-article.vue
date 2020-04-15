@@ -2,8 +2,8 @@
   article.tile_article
     template(v-if="itemData.type === 'reddit'")
       router-link.tile-article_link.tile-article_link--img(to="/gallery")
-      .tile-article_label gallery
-      img.tile-article_img(:src="itemData.thumbnail")
+        .tile-article_label gallery
+        img.tile-article_img(:src="itemData.thumbnail")
 
     template(v-else)
       .tile-article_label {{ itemData.type }}

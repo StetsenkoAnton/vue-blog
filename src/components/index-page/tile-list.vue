@@ -2,6 +2,7 @@
   section
     .main-tile_block(
       v-for="(row, index) in tileList"
+      :key="index"
       :class="{'reverse-container': index%2}"
     )
 
@@ -9,19 +10,12 @@
         .tile-item.tile-item--full
           tile-item-article(:item-data="row[0].node")
 
-
       .tile-item_wrap
-        //-v-if="index"
         .tile-item.tile-item--half(
-          v-for="(entity, index) in row"
+          v-for="(entity, i) in row"
+          v-if="i"
         )
-          p {{index}}
-          //tile-item-article(:item-data="entity.node")
-          //-component(
-            /:is="entity.node.type === 'reddit' ? 'tile-item-image' : 'tile-item-article'"
-            /:item-data="entity.node"
-            )
-
+          tile-item-article(:item-data="entity.node")
 
 </template>
 
