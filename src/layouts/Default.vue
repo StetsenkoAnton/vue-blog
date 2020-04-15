@@ -1,6 +1,6 @@
 <template lang="pug">
   .page
-    //page-header
+    page-header
     .header_heightfix
     slot
     //page-footer
