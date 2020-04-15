@@ -7,17 +7,16 @@
 
       .tile-item_wrap
         .tile-item.tile-item--full
-          component(
-            :is="row[0].node.type === 'reddit' ? 'tile-item-image' : 'tile-item-article'"
-            :item-data="row[0].node"
-            )
+          tile-item-article(:item-data="row[0].node")
+
 
       .tile-item_wrap
         //-v-if="index"
         .tile-item.tile-item--half(
           v-for="(entity, index) in row"
-
         )
+          p {{index}}
+          //tile-item-article(:item-data="entity.node")
           //-component(
             /:is="entity.node.type === 'reddit' ? 'tile-item-image' : 'tile-item-article'"
             /:item-data="entity.node"
@@ -66,10 +65,10 @@
 
 <script>
   import TileItemArticle from '@/components/index-page/tile-item-article.vue';
-  import TileItemImage from '@/components/index-page/tile-item-img.vue';
+  //import TileItemImage from '@/components/index-page/tile-item-img.vue';
 export default {
   name: 'TileList',
-  components: {TileItemArticle, TileItemImage},
+  components: {TileItemArticle},
   computed: {
     tileList() {
       const blogList = this.$static.blogPosts.edges;
